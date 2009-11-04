@@ -1,0 +1,10 @@
+MAILTO=usabilist@gmail.com
+PWD=/home/u9858/gui.ru/www/wp-content
+PATH=/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/home/u9858/bin
+USER=u9858
+SHELL=/usr/local/bin/bash
+HOME=/home/u9858
+
+33 */1 * * * cd /home/u9858/gui.ru/www/wp-content/ ;  /usr/local/apache-php4/bin/php-cli -q update-feeds.php
+* * * * *	/usr/local/bin/wget -O /dev/null -q http://marafon.uidesign.ru/twitwall/loader.php
+* * * * *   /usr/local/bin/wget -O /dev/null -q http://marathon.uidesign.ru/twitwall/loader.php
